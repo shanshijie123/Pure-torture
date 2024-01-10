@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>折磨页面</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+        .torture {
+            color: red;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tortureContent" class="torture">
+        <!-- JavaScript将在这里插入内容 -->
+    </div>
+
+    <script>
+        function repeatTorture() {
+            var content = '';
+            for (var i = 0; i < 1000; i++) {
+                content += '<p>纯折磨</p><p>究极折磨</p><p>终极折磨王</p>';
+            }
+            document.getElementById('tortureContent').innerHTML = content;
+        }
+
+        repeatTorture();
+    </script>
+</body>
+</html>
